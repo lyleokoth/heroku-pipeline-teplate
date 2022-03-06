@@ -7,8 +7,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def index():
-    x = os.environ['FLASK_ENV'] if os.environ['FLASK_ENV'] else 'Unset'
-    return {'Welcome': x}
+    return {'Welcome': True}
 
 
 if __name__ == '__main__':
